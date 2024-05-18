@@ -63,12 +63,12 @@ const getNumRandom = () => {
     const ataquePropio = parseInt (poke1Ataque.innerHTML);
     const ataqueRival = parseInt(poke2Ataque.innerHTML);
   
-    if (ataquePropio > ataqueRival) {
-      alert('Ganaste la batalla')
+    if (ataquePropio < ataqueRival) {
+      alert(' Perdiste la batalla')
     } else {
-      alert('Perdiste la batalla')
+      alert('Ganaste la batalla')
     }
-    console.log(ataquePropio);
+
   }
   
   window.addEventListener('load', obtenerPokeRival);
